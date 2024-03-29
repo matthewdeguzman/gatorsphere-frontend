@@ -1,29 +1,22 @@
 <script lang="ts">
 	import Sidebar from '$lib/components/sidebar.svelte';
+	import Header from '$lib/components/header.svelte';
 	import './reset.css';
 	import './global.css';
 </script>
 
-<header>
-	Club Forum
-</header>
-
+<Header />
 <div id="page-layout">
 	<Sidebar />
 	<slot />
+	<div />
 </div>
 
 <style>
-	header {
-		border-bottom: 1px solid #ccc;
-		display: block;
-		font-size: 1.5em;
-	}
-
-
 	#page-layout {
+		width: 100%;
 		display: grid;
-		grid-template-columns: 300px auto;
+		grid-template-columns: 272px auto 272px;
 	}
 
 </style>

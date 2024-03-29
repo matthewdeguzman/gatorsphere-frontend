@@ -1,13 +1,12 @@
-
 <header>
 	<div class="header-box">
 		<img src="/logo.png" alt="GatorSphere logo"/>
 		<h1 class="title">
 			GatorSphere
 		</h1>
-		<button class="signin">
+		<a href="/login" class="signin login-btn">
 			Sign In
-		</button>
+		</a>
 	</div>
 </header>
 
@@ -18,17 +17,10 @@
 	}
 
 	.signin {
-		width: 70px;
-		height: 35px;
 		justify-self: end;
 		border: none;
-		border-radius: 15px;
-		background-color: black;
-		color: white;
-	}
-
-	.signin:hover {
-		background-color: #505050;
+		line-height: 40px;
+		text-align: center;
 	}
 
 	.title {

@@ -30,7 +30,8 @@
 		display: flex;
 		flex-direction: column;
 		box-sizing: border-box;
-		border-right: 1px solid #ccc;
+		border-right: 1px solid;
+		border-color: var(--border-color);
 		overflow: scroll;
 		align-items: center;
 	}
@@ -44,7 +45,7 @@
 	}
 
 	.community:hover {
-		background-color: #f0f0f0;
+		background-color: var(--background-hover);
 	}
 
 </style>

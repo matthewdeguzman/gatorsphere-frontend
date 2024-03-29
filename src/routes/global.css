@@ -15,6 +15,10 @@ body, html {
 	--dvh-unit: 1dvh;
     --viewport-height: calc(calc(var(--dvh-unit)* 100));
 	--vh-adjusted: calc(var(--viewport-height, 100vh) - (var(--header-height) + var(--header-padding)) - 15px);
+	--background-hover: #f0f0f0;
+	--header-button-color: #e5e2e2;
+	--header-button-hover-color: #cccbcb;
+	--border-color: #ccc;
 }
 
 .height-wo-header {

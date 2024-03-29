@@ -1,6 +1,7 @@
-<div class="header-box">
-	<img src="/logo.png" alt="GatorSphere logo"/>
-	<div class="logo-signin">
+
+<header>
+	<div class="header-box">
+		<img src="/logo.png" alt="GatorSphere logo"/>
 		<h1 class="title">
 			GatorSphere
 		</h1>
@@ -8,13 +9,12 @@
 			Sign In
 		</button>
 	</div>
-</div>
+</header>
 
 <style>
-
-	.logo-signin {
-		display: grid;
-		grid-template-columns: auto auto;
+	header {
+		padding: var(--header-padding);
+		padding-bottom: 0;
 	}
 
 	.signin {
@@ -39,12 +39,13 @@
 	}
 
 	.header-box {
+		border-bottom: 1px solid;
+		border-color: var(--border-color);
 		display: grid;
-		grid-template-columns: 50px auto;
-		border-bottom: 1px solid #ccc;
+		grid-template-columns: 50px auto auto;
 		align-items: center;
-		padding: var(--header-padding);
 		height: var(--header-height);
+		padding-bottom: 0.5em
 	}
 
 	img {

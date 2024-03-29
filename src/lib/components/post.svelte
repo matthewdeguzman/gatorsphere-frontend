@@ -5,24 +5,26 @@
 	export let club: string;
 </script>
 
-<div class="post">
-	<div class="post-header">
-		<p class="community-tag">{community}</p>
-		<p class="club">| {club}</p>
-		<p class="time">• 11 hr. ago</p>
-	</div>
-	<h1 class="title">{title}</h1>
-	<p class="content">{content}</p>
+<div class="post-box">
+	<div class="post-wrapper">
+		<div class="post-header">
+			<p class="community-tag">{community}</p>
+			<p class="club">| {club}</p>
+			<p class="time">• 11 hr. ago</p>
+		</div>
+		<h1 class="title">{title}</h1>
+		<p class="content">{content}</p>
 
-	<div class="post-footer">
-		<button class="footer-button comment">
-			<img class="icon comment-icon" src="/comment.svg" alt="comment"/>
-			<p class="comment-count">10</p>
-		</button>
-		<button class="footer-button share">
-			<img class="icon share-icon" src="/share.svg" alt="share"/>
-			<p class="share-content">Share</p>
-		</button>
+		<div class="post-footer">
+			<button class="footer-button comment">
+				<img class="icon comment-icon" src="/comment.svg" alt="comment"/>
+				<p class="comment-count">10</p>
+			</button>
+			<button class="footer-button share">
+				<img class="icon share-icon" src="/share.svg" alt="share"/>
+				<p class="share-content">Share</p>
+			</button>
+		</div>
 	</div>
 </div>
 
@@ -53,10 +55,22 @@
 		margin-bottom: 0.5em;
 	}
 
-	.post {
-		border-bottom: 1px solid #ccc;
+	.post-box {
+		border-bottom: 1px solid;
+		border-color: var(--border-color);
+		padding-bottom: 0.5em;
+		margin-top: 0.5em;
+		margin-left: 0.75em;
+	}
+
+	.post-wrapper {
 		padding: 1em;
-		width: clamp(200px, 100%, 600px);
+		max-width: 600px;
+		border-radius: 10px;
+	}
+
+	.post-wrapper:hover {
+		background-color: var(--background-hover);
 	}
 
 	.post-footer {
@@ -68,10 +82,11 @@
 
 	.content {
 		display: block;
+		line-height: 1.25em;
 	}
 
 	.footer-button {
-		background-color: #f0f0f0;
+		background-color: var(--header-button-color);
 		border: none;
 		border-radius: 10px;
 		height: 100%;
@@ -79,7 +94,7 @@
 	}
 
 	.footer-button:hover {
-		background-color: #cccbcb;
+		background-color: var(--header-button-hover-color);
 	}
 
 	.comment {

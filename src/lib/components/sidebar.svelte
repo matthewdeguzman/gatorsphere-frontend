@@ -11,7 +11,9 @@
 			{community}
 		</div>
 	{/each}
-	<div class="community" />
+	<div class="weight"> </div>
+	<div class="weight"> </div>
+	<div class="weight"> </div>
 </div>
 
 <style>
@@ -36,7 +38,7 @@
 		padding-bottom: 1em;
 	}
 
-	.community {
+	.weight, .community {
 		font-weight: 350;
 		padding: 1em;
 		border-radius: 10px;

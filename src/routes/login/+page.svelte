@@ -1,5 +1,5 @@
 
-<form class="login-form">
+<form action="/" method="get" class="login-form">
 	<div class="login-box">
 		<label for="username">Username <p class="req" title="required">*</p></label>
 		<input 
@@ -11,7 +11,7 @@
 	</div>
 	<div class="login-box">
 		<label for="password">Password <p class="req" title="required">*</p></label>
-		<input type="text" id="password" name="password" required>
+		<input type="password" id="password" name="password" required>
 	</div>
 	<input class="login-btn" type="submit" value="Log In">
 </form>

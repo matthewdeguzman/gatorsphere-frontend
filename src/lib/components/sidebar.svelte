@@ -11,9 +11,6 @@
 			{community}
 		</div>
 	{/each}
-	<div class="weight"> </div>
-	<div class="weight"> </div>
-	<div class="weight"> </div>
 </div>
 
 <style>
@@ -24,25 +21,27 @@
 	}
 
 	.community-header {
-		padding-top: 1em;
-		padding-bottom: 0.25em;
-		width: 80%;
+		box-sizing: border-box;
+		padding: 1em 0 0.25em 1em;
+		width: 90%;
 	}
 
 	#communities {
-		height: 100vh;
+		height: var(--vh-adjusted);
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
 		border-right: 1px solid #ccc;
 		overflow: scroll;
-		display: grid;
-		justify-items: center;
-		padding-bottom: 1em;
+		align-items: center;
 	}
 
-	.weight, .community {
+	.community {
+		box-sizing: border-box;
 		font-weight: 350;
 		padding: 1em;
 		border-radius: 10px;
-		width: 80%;
+		width: 90%;
 	}
 
 	.community:hover {

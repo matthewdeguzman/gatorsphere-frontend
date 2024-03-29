@@ -1,3 +1,18 @@
 * {
 	font-family: 'Inter var', 'ui-sans-serif', 'system-ui' ,'sans-serif' , 'Apple Color Emoji' , 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+	--header-height: 50px;
+	--header-padding: 0.5em;
+	--dvh-unit: 1dvh;
+    --viewport-height: calc(calc(var(--dvh-unit)* 100));
+	--vh-adjusted: calc(var(--viewport-height, 100vh) - (var(--header-height) + var(--header-padding)) - 15px);
+}

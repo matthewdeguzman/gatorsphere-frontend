@@ -43,7 +43,8 @@
 		grid-template-columns: 50px auto;
 		border-bottom: 1px solid #ccc;
 		align-items: center;
-		padding: 0.5em;
+		padding: var(--header-padding);
+		height: var(--header-height);
 	}
 
 	img {

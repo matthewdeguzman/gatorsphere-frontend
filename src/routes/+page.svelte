@@ -113,19 +113,30 @@
 
 <div class="posts">
 	{#each posts as post}
-		<div class="post-wrapper">
-			<Post {...post} />
-		</div>
+		<Post {...post} />
 	{/each}
+	<h1 class="end-text">You've Reached the end!</h1>
 </div>
 
+
 <style>
-	.posts {
-		height: 100vh;
-		overflow-y: scroll;
+	img {
+		width: 50px;
+		padding: 100px;
 	}
-	.post-wrapper {
+
+	.posts {
+		height: var(--vh-adjusted);
+		overflow-y: scroll;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.end-text {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		font-size: 1.2em;
+		font-weight: 600;
 	}
 </style>

@@ -16,3 +16,11 @@ body, html {
     --viewport-height: calc(calc(var(--dvh-unit)* 100));
 	--vh-adjusted: calc(var(--viewport-height, 100vh) - (var(--header-height) + var(--header-padding)) - 15px);
 }
+
+.height-wo-header {
+	height: var(--vh-adjusted);
+}
+
+.styled-scrollbar {
+	scrollbar-width: thin;
+}

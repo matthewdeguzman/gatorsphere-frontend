@@ -2,7 +2,7 @@
 	import { communities } from "$lib/stores";
 </script>
 
-<div id="communities">
+<div id="communities" class="height-wo-header styled-scrollbar">
 	<div class="community-header">
 		<h1>COMMUNITIES</h1>
 	</div>
@@ -27,7 +27,6 @@
 	}
 
 	#communities {
-		height: var(--vh-adjusted);
 		display: flex;
 		flex-direction: column;
 		box-sizing: border-box;

@@ -111,7 +111,7 @@
 </script>
 
 
-<div class="posts">
+<div class="posts styled-scrollbar height-wo-header">
 	{#each posts as post}
 		<Post {...post} />
 	{/each}
@@ -120,13 +120,7 @@
 
 
 <style>
-	img {
-		width: 50px;
-		padding: 100px;
-	}
-
 	.posts {
-		height: var(--vh-adjusted);
 		overflow-y: scroll;
 		display: flex;
 		flex-direction: column;

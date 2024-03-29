@@ -1,9 +1,11 @@
 <header>
 	<div class="header-box">
-		<img src="/logo.png" alt="GatorSphere logo"/>
-		<h1 class="title">
+		<a href="/">
+			<img src="/logo.png" alt="GatorSphere logo"/>
+		</a>
+		<a href="/" class="title">
 			GatorSphere
-		</h1>
+		</a>
 		<a href="/login" class="signin login-btn">
 			Sign In
 		</a>
@@ -28,6 +30,8 @@
 		display: block;
 		font-weight: bold;
 		font-size: 2em;
+		text-decoration: none;
+		color: black;
 	}
 
 	.header-box {

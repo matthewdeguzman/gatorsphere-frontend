@@ -16,12 +16,12 @@
 	.page-layout {
 		width: 100%;
 		display: grid;
-		grid-template-columns: 272px auto 272px;
+		grid-template-columns: var(--sidebar-width) auto var(--sidebar-width);
 	}
 	
 	@media (max-width: 960px) {
 		.page-layout {
-			grid-template-columns: auto;
+			grid-template-columns: 100%;
 		}
 	}
 

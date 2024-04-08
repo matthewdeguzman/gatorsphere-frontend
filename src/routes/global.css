@@ -19,6 +19,7 @@ body, html {
 	--header-button-color: #e5e2e2;
 	--header-button-hover-color: #cccbcb;
 	--border-color: #ccc;
+	--sidebar-width: 220px;
 }
 
 .height-wo-header {

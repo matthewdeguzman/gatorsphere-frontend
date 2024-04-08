@@ -35,16 +35,16 @@
 		overflow: scroll;
 		align-items: center;
 		transition: width 0.5s ease;
-		position: absolute;
 		background: white;
 	}
 
 	@media (max-width: 960px) {
 		.communities {
 			width: 0;
+			position: absolute;
 		}
 		.communities.hidden {
-			width: 200px;
+			width: var(--sidebar-width);
 		}
 	}
 

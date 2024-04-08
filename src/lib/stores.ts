@@ -1,4 +1,4 @@
-import { readable } from 'svelte/store';
+import { readable, writable } from 'svelte/store';
 
 export const communities = readable([
 	"c/computer-science", "c/social", "c/pre-health", "c/law", "c/business", 
@@ -7,3 +7,5 @@ export const communities = readable([
 	"c/design", "c/journalism", "c/writing", "c/fashion", "c/culinary", 
 	"c/sports", "c/fitness", "c/gaming"
 ]);
+
+export const showMenu = writable(false);

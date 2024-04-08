@@ -6,17 +6,24 @@
 </script>
 
 <Header />
-<div id="page-layout">
+<div class="page-layout">
 	<Sidebar />
 	<slot />
 	<div />
 </div>
 
 <style>
-	#page-layout {
+	.page-layout {
 		width: 100%;
 		display: grid;
 		grid-template-columns: 272px auto 272px;
 	}
+	
+	@media (max-width: 960px) {
+		.page-layout {
+			grid-template-columns: 0 auto 0;
+		}
+	}
+
 
 </style>

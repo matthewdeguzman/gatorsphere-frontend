@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { communities } from "$lib/stores";
+	import { showMenu, communities } from "$lib/stores";
 </script>
 
-<div id="communities" class="height-wo-header styled-scrollbar">
+<div id="communities" class="height-wo-header styled-scrollbar" class:show={$showMenu} class:hide={!$showMenu}>
 	<div class="community-header">
 		<h1>COMMUNITIES</h1>
 	</div>
@@ -34,6 +34,7 @@
 		border-color: var(--border-color);
 		overflow: scroll;
 		align-items: center;
+		transition: left 0.5s ease;
 	}
 
 	.community {
@@ -46,6 +47,16 @@
 
 	.community:hover {
 		background-color: var(--background-hover);
+	}
+
+	@media (max-width: 960px) {
+		.hide {
+			visibility: hidden;
+		}
+
+		.show{
+			visibility: visible;
+		}
 	}
 
 </style>

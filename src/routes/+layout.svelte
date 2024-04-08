@@ -21,7 +21,7 @@
 	
 	@media (max-width: 960px) {
 		.page-layout {
-			grid-template-columns: 0 auto 0;
+			grid-template-columns: auto;
 		}
 	}
 

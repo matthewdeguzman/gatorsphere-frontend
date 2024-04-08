@@ -2,13 +2,13 @@
 	import { showMenu, communities } from "$lib/stores";
 </script>
 
-<div id="communities" class="height-wo-header styled-scrollbar" class:show={$showMenu} class:hide={!$showMenu}>
+<div class="communities height-wo-header styled-scrollbar" class:hidden={!$showMenu}>
 	<div class="community-header">
 		<h1>COMMUNITIES</h1>
 	</div>
 	{#each $communities as community}
 		<div class="community">
-			{community}
+			<p>{community}</p>
 		</div>
 	{/each}
 </div>
@@ -26,7 +26,7 @@
 		width: 90%;
 	}
 
-	#communities {
+	.communities {
 		display: flex;
 		flex-direction: column;
 		box-sizing: border-box;
@@ -34,7 +34,18 @@
 		border-color: var(--border-color);
 		overflow: scroll;
 		align-items: center;
-		transition: left 0.5s ease;
+		transition: width 0.5s ease;
+		position: absolute;
+		background: white;
+	}
+
+	@media (max-width: 960px) {
+		.communities {
+			width: 0;
+		}
+		.communities.hidden {
+			width: 200px;
+		}
 	}
 
 	.community {
@@ -43,20 +54,15 @@
 		padding: 1em;
 		border-radius: 10px;
 		width: 90%;
+		cursor: pointer;
+	}
+
+	.community > p {
+		white-space: nowrap;
 	}
 
 	.community:hover {
 		background-color: var(--background-hover);
-	}
-
-	@media (max-width: 960px) {
-		.hide {
-			visibility: hidden;
-		}
-
-		.show{
-			visibility: visible;
-		}
 	}
 
 </style>

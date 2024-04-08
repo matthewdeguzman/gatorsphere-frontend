@@ -9,7 +9,9 @@
 <header>
 	<div class="header-box">
 		<div class="logo-container">
-			<img on:click={sidebarClick} class="menu-icon" class:showMenu src="/menu.svg" alt="Menu icon"/>
+			<button on:click={sidebarClick} class="sidebar-btn">
+				<img class="menu-icon" class:showMenu src="/menu.svg" alt="Menu icon"/>
+			</button>
 			<a href="/">
 				<img class="logo" src="/logo.png" alt="GatorSphere logo"/>
 			</a>
@@ -24,6 +26,12 @@
 </header>
 
 <style>
+	.sidebar-btn {
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+
 	header {
 		padding: var(--header-padding);
 		padding-bottom: 0;
@@ -34,6 +42,7 @@
 		border: none;
 		line-height: 40px;
 		text-align: center;
+		position: relative;
 	}
 
 	.title {
